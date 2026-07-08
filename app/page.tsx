@@ -70,6 +70,9 @@ const stats = [
   ["24h", "Tiempo ahorrado"],
 ];
 
+const heroLeadMessage =
+  "Deja tu correo y te mantendremos actualizado, adicional vas a recibir un precio especial, tambien podras ser un beta tester!";
+
 function fadeUp(delay = 0) {
   return {
     initial: { opacity: 0, y: 24 },
@@ -433,12 +436,12 @@ export default function Home() {
             <Rocket className="h-4 w-4" />
           </motion.span>
           <motion.span
-            className="bg-[linear-gradient(90deg,rgba(255,255,255,0.72),rgba(221,214,254,1),rgba(255,255,255,0.78),rgba(196,181,253,1))] bg-[length:240%_100%] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(168,85,247,0.22)]"
-            animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+            className="attention-glow-text"
+            data-text={heroLeadMessage}
+            animate={{ filter: ["saturate(1)", "saturate(1.35)", "saturate(1)"] }}
+            transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut" }}
           >
-            Deja tu correo y te mantendremos actualizado, adicional vas a recibir un precio
-            especial, tambien podras ser un beta tester!
+            {heroLeadMessage}
           </motion.span>
         </motion.div>
 

@@ -66,3 +66,88 @@ body {
     );
   mask-image: radial-gradient(ellipse at center, transparent 0 38%, black 46%, transparent 72%);
 }
+
+.attention-glow-text {
+  position: relative;
+  display: inline-block;
+  background:
+    linear-gradient(100deg, #67e8f9 0%, #ffffff 18%, #f0abfc 42%, #a7f3d0 68%, #fde68a 88%, #67e8f9 100%);
+  background-size: 260% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 18px rgba(103, 232, 249, 0.26),
+    0 0 34px rgba(240, 171, 252, 0.2);
+  animation: attention-gradient-flow 5.6s ease-in-out infinite;
+}
+
+.attention-glow-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(100deg, rgba(34, 211, 238, 0.7), rgba(217, 70, 239, 0.74), rgba(132, 204, 22, 0.55));
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: blur(18px);
+  opacity: 0.78;
+  animation: attention-gradient-flow 5.6s ease-in-out infinite, attention-glow-breathe 2.8s ease-in-out infinite;
+}
+
+.attention-glow-text::after {
+  content: "";
+  position: absolute;
+  inset: -0.2em -0.4em;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 18%, rgba(255, 255, 255, 0.42) 46%, transparent 66%);
+  transform: translateX(-120%) skewX(-16deg);
+  animation: attention-light-sweep 3.8s ease-in-out infinite;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@keyframes attention-gradient-flow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes attention-glow-breathe {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.99);
+  }
+
+  50% {
+    opacity: 0.95;
+    transform: scale(1.015);
+  }
+}
+
+@keyframes attention-light-sweep {
+  0%,
+  42% {
+    transform: translateX(-120%) skewX(-16deg);
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0.75;
+  }
+
+  78%,
+  100% {
+    transform: translateX(120%) skewX(-16deg);
+    opacity: 0;
+  }
+}
