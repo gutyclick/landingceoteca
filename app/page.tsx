@@ -394,8 +394,6 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.12, duration: 0.7, ease: "easeOut" }}
         >
-          Lee menos.
-          <br />
           Aprende como CEO.
           <br />
           <span className="bg-gradient-to-r from-white via-violet-200 to-violet-400 bg-clip-text text-transparent">
