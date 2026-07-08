@@ -99,15 +99,7 @@ body {
 }
 
 .attention-glow-text::after {
-  content: "";
-  position: absolute;
-  inset: -0.2em -0.4em;
-  z-index: -1;
-  background: linear-gradient(110deg, transparent 18%, rgba(255, 255, 255, 0.42) 46%, transparent 66%);
-  transform: translateX(-120%) skewX(-16deg);
-  animation: attention-light-sweep 3.8s ease-in-out infinite;
-  mix-blend-mode: screen;
-  pointer-events: none;
+  content: none;
 }
 
 @keyframes attention-gradient-flow {
@@ -131,23 +123,5 @@ body {
   50% {
     opacity: 0.95;
     transform: scale(1.015);
-  }
-}
-
-@keyframes attention-light-sweep {
-  0%,
-  42% {
-    transform: translateX(-120%) skewX(-16deg);
-    opacity: 0;
-  }
-
-  55% {
-    opacity: 0.75;
-  }
-
-  78%,
-  100% {
-    transform: translateX(120%) skewX(-16deg);
-    opacity: 0;
   }
 }

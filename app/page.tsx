@@ -71,7 +71,7 @@ const stats = [
 ];
 
 const heroLeadMessage =
-  "Deja tu correo y te mantendremos actualizado, adicional vas a recibir un precio especial, tambien podras ser un beta tester!";
+  "Reserva tu lugar como Founder. Te enviaremos novedades privadas, un precio especial de lanzamiento y la posibilidad de probar CEOTECA antes que todos como beta tester.";
 
 function fadeUp(delay = 0) {
   return {
