@@ -411,16 +411,36 @@ export default function Home() {
           con una IA enfocada en negocios para ayudarte a pensar mejor, decidir mejor y crecer mas rapido.
         </motion.p>
 
-        <motion.p
-          className="mx-auto mt-7 flex max-w-2xl items-start justify-center gap-3 text-balance text-base leading-7 text-white/74"
+        <motion.div
+          className="mx-auto mt-7 flex max-w-3xl items-start justify-center gap-3 text-balance text-base font-medium leading-7 text-white/78 sm:text-lg"
           initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.65, ease: "easeOut" }}
+          animate={{ opacity: 1, y: 0, scale: [1, 1.015, 1] }}
+          transition={{
+            opacity: { delay: 0.3, duration: 0.65, ease: "easeOut" },
+            y: { delay: 0.3, duration: 0.65, ease: "easeOut" },
+            scale: { delay: 1, duration: 3.2, repeat: Infinity, ease: "easeInOut" },
+          }}
         >
-          <Rocket className="mt-1 h-5 w-5 shrink-0 text-violet-300" />
-          Deja tu correo o WhatsApp y te enviaremos un descuento especial de lanzamiento para{" "}
-          <span className="font-semibold text-violet-200">Founders CEO.</span>
-        </motion.p>
+          <motion.span
+            className="mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-violet-400/12 text-violet-200 shadow-[0_0_28px_rgba(168,85,247,0.45)]"
+            animate={{ rotate: [0, -8, 8, 0], boxShadow: [
+              "0 0 18px rgba(168,85,247,0.28)",
+              "0 0 34px rgba(196,181,253,0.55)",
+              "0 0 18px rgba(168,85,247,0.28)",
+            ] }}
+            transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Rocket className="h-4 w-4" />
+          </motion.span>
+          <motion.span
+            className="bg-[linear-gradient(90deg,rgba(255,255,255,0.72),rgba(221,214,254,1),rgba(255,255,255,0.78),rgba(196,181,253,1))] bg-[length:240%_100%] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(168,85,247,0.22)]"
+            animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            Deja tu correo y te mantendremos actualizado, adicional vas a recibir un precio
+            especial, tambien podras ser un beta tester!
+          </motion.span>
+        </motion.div>
 
         <div className="mt-7">
           <LeadForm />
