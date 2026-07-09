@@ -98,7 +98,7 @@ function Header() {
         </a>
       </nav>
       <Button asChild variant="outline" className="hidden sm:inline-flex">
-        <a href="/register">
+        <a href="#acceso">
           <Lock className="h-4 w-4" />
           Acceso anticipado
         </a>
