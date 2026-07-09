@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CEOTECA | Lee menos. Aprende como CEO.",
+  title: "CEOTECA | Aprende como CEO. Actúa con ventaja.",
   description:
     "CEOTECA transforma libros clave de negocios, inversión y crecimiento en análisis accionables con IA para founders.",
   metadataBase: new URL("https://landingceoteca.vercel.app"),

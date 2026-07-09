@@ -23,7 +23,7 @@ import { cn } from "@/lib/utils";
 
 const founderBenefits = [
   { icon: Tag, label: "Descuento Founder" },
-  { icon: BookOpen, label: "Guia exclusiva para aplicar lo aprendido" },
+  { icon: BookOpen, label: "Guía exclusiva para aplicar lo aprendido" },
   { icon: Sparkles, label: "IA de negocios incluida desde el inicio" },
 ];
 
@@ -31,16 +31,16 @@ const featureCards = [
   {
     icon: BookOpen,
     title: "Aprende lo esencial",
-    text: "Analisis originales y claros para entender ideas clave sin perder horas.",
+    text: "Análisis originales y claros para entender ideas clave sin perder horas.",
   },
   {
     icon: MessageSquareText,
     title: "Pregunta y profundiza",
-    text: "Conversa con la IA sobre cada analisis para aterrizarlo a tu contexto.",
+    text: "Conversa con la IA sobre cada análisis para aterrizarlo a tu contexto.",
   },
   {
     icon: TrendingUp,
-    title: "Convierte ideas en accion",
+    title: "Convierte ideas en acción",
     text: "Lleva aprendizajes a decisiones de negocio, ventas, dinero y crecimiento.",
   },
 ];
@@ -49,24 +49,24 @@ const steps = [
   {
     icon: BookOpen,
     title: "Elige un tema",
-    text: "Negocios, inversion, mentalidad, liderazgo y crecimiento personal.",
+    text: "Negocios, inversión, mentalidad, liderazgo y crecimiento personal.",
   },
   {
     icon: Brain,
     title: "Entiende el punto clave",
-    text: "Lee analisis redactados para pensar mejor, no para acumular resumenes.",
+    text: "Lee análisis redactados para pensar mejor, no para acumular resúmenes.",
   },
   {
     icon: WandSparkles,
-    title: "Aplicalo con IA",
+    title: "Aplícalo con IA",
     text: "Haz preguntas y convierte ideas en acciones concretas para tu semana.",
   },
 ];
 
 const stats = [
-  ["12", "Analisis listos"],
+  ["12", "Análisis listos"],
   ["48", "Ideas aplicables"],
-  ["86%", "Retencion"],
+  ["86%", "Retención"],
   ["24h", "Tiempo ahorrado"],
 ];
 
@@ -88,17 +88,17 @@ function Header() {
       <Logo />
       <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
         <a className="transition hover:text-white" href="#que-es">
-          Que es
+          Qué es
         </a>
         <a className="transition hover:text-white" href="#como-funciona">
-          Como funciona
+          Cómo funciona
         </a>
         <a className="transition hover:text-white" href="#demo">
           Demo
         </a>
       </nav>
       <Button asChild variant="outline" className="hidden sm:inline-flex">
-        <a href="#acceso">
+        <a href="/register">
           <Lock className="h-4 w-4" />
           Acceso anticipado
         </a>
@@ -115,7 +115,7 @@ function FounderBadge() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55 }}
     >
-      Acceso founders
+      Acceso Founders
       <span className="h-1 w-1 rounded-full bg-violet-200" />
       Aprende con ventaja
     </motion.div>
@@ -169,7 +169,7 @@ function AvatarStack() {
         </div>
       </div>
       <p className="text-center text-base text-white/72">
-        Unete a los <span className="font-semibold text-violet-200">primeros lideres</span>{" "}
+        Únete a los <span className="font-semibold text-violet-200">primeros líderes</span>{" "}
         que ya quieren entrar.
       </p>
     </motion.div>
@@ -187,7 +187,7 @@ function VideoMock() {
           Descubre CEOTECA en 60 segundos
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-white/58">
-          Mira como aprenderas de analisis originales y como la IA te ayudara a convertir ideas en accion.
+          Mira cómo aprenderás de análisis originales y cómo la IA te ayudará a convertir ideas en acción.
         </p>
       </div>
 
@@ -215,14 +215,14 @@ function VideoMock() {
 
           <main className="p-5 sm:p-8">
             <p className="text-2xl font-bold text-white">Hola, Founder.</p>
-            <p className="mt-1 text-sm text-white/54">Tu ventaja comienza aqui.</p>
+            <p className="mt-1 text-sm text-white/54">Tu ventaja comienza aquí.</p>
             <div className="mt-5 rounded-md border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white/36">
-              Que quieres aprender hoy?
+              ¿Qué quieres aprender hoy?
             </div>
             <div className="mt-6">
               <p className="text-sm font-semibold text-white">Continuar aprendiendo</p>
               <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                {["Habitos Atomicos", "Principios", "De Cero a Uno", "Piense y hagase rico"].map(
+                {["Hábitos Atómicos", "Principios", "De Cero a Uno", "Piense y hágase rico"].map(
                   (book, index) => (
                     <div key={book} className="rounded-md border border-white/10 bg-white/[0.05] p-3">
                       <div
@@ -268,7 +268,7 @@ function VideoMock() {
               <div className="mx-auto mt-8 grid h-24 w-24 place-items-center rounded-full bg-violet-500/20 shadow-violet">
                 <Sparkles className="h-9 w-9 text-violet-200" />
               </div>
-              <Button className="mt-8 h-10 w-full text-xs">Preguntale a la IA</Button>
+              <Button className="mt-8 h-10 w-full text-xs">Pregúntale a la IA</Button>
             </div>
           </aside>
         </div>
@@ -283,8 +283,8 @@ function VideoMock() {
       </div>
 
       <p className="mx-auto mt-5 max-w-3xl text-center text-xs leading-5 text-white/45">
-        Disclaimer: CEOTECA no reemplaza los libros ni entrega libros completos. Creamos analisis
-        originales para ayudarte a entender un punto de vista, pensar mejor y aplicar ideas con mas claridad.
+        Disclaimer: CEOTECA no reemplaza los libros ni entrega libros completos. Creamos análisis
+        originales para ayudarte a entender un punto de vista, pensar mejor y aplicar ideas con más claridad.
       </p>
     </motion.section>
   );
@@ -316,7 +316,7 @@ function Steps() {
     <section id="como-funciona" className="mx-auto mt-20 max-w-6xl px-5 sm:px-8">
       <motion.div className="text-center" {...fadeUp()}>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">
-          Como funciona
+          Cómo funciona
         </p>
       </motion.div>
       <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -351,7 +351,7 @@ function FounderCta() {
           <Gift className="h-7 w-7 text-violet-100" />
         </div>
         <h2 className="relative mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Entra antes que el publico.
+          Entra antes que el público.
         </h2>
         <p className="relative mx-auto mt-3 max-w-2xl text-sm text-white/62 sm:text-base">
           Precio Founder, acceso anticipado, bonos exclusivos y cupos limitados para los primeros miembros.
@@ -400,7 +400,7 @@ export default function Home() {
           Aprende como CEO.
           <br />
           <span className="bg-gradient-to-r from-white via-violet-200 to-violet-400 bg-clip-text text-transparent">
-            Actua con ventaja.
+            Actúa con ventaja.
           </span>
         </motion.h1>
 
@@ -410,8 +410,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.22, duration: 0.65, ease: "easeOut" }}
         >
-          CEOTECA transforma libros clave de negocios, inversion y crecimiento en ideas accionables,
-          con una IA enfocada en negocios para ayudarte a pensar mejor, decidir mejor y crecer mas rapido.
+          CEOTECA transforma libros clave de negocios, inversión y crecimiento en ideas accionables,
+          con una IA enfocada en negocios para ayudarte a pensar mejor, decidir mejor y crecer más rápido.
         </motion.p>
 
         <motion.div
@@ -468,10 +468,10 @@ export default function Home() {
               Privacidad
             </a>
             <a href="#" className="hover:text-white">
-              Terminos
+              Términos
             </a>
             <a href="#acceso" className="inline-flex items-center gap-2 hover:text-white">
-              Proximamente
+              Próximamente
               <span className="h-2 w-2 rounded-full bg-violet-400" />
             </a>
           </div>

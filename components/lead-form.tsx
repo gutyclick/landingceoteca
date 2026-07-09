@@ -69,10 +69,10 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
         <label className="relative flex-1">
           <Mail className="pointer-events-none absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-white/72" />
           <Input
-            aria-label="Correo o numero de WhatsApp"
+            aria-label="Correo o número de WhatsApp"
             value={contact}
             onChange={(event) => setContact(event.target.value)}
-            placeholder="Tu correo o numero de WhatsApp"
+            placeholder="Tu correo o número de WhatsApp"
             className="h-16 pl-14"
             required
           />
